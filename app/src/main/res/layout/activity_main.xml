@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="comkeetasri.github.chatfriends.MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtUsr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="159dp"
+        android:text="USERNAME"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtUsr"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textInputLayout"
+
+        >
+
+        <EditText
+            android:id="@+id/inputUsr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:hint="Input your name here"
+            android:layout_below="@+id/textInputLayout"
+            android:layout_alignParentStart="true"
+
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/join_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join"
+        android:layout_marginEnd="54dp"
+        android:layout_below="@+id/textInputLayout"
+        android:layout_toStartOf="@+id/create_button"
+        android:layout_marginTop="25dp"
+        android:onClick="joinRoom"
+
+        />
+
+    <Button
+        android:id="@+id/create_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:layout_marginEnd="75dp"
+        android:layout_alignBaseline="@+id/join_button"
+        android:layout_alignBottom="@+id/join_button"
+        android:layout_alignParentEnd="true"
+        android:onClick="createRoom"
+
+        />
+
+</RelativeLayout>
+

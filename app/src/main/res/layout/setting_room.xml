@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/room_name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ROOM NAME"
+        android:layout_above="@+id/input_room_text"
+        android:layout_alignStart="@+id/room_password"
+        android:layout_marginBottom="14dp"
+
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_input_layout"
+        android:layout_alignTop="@+id/room_name_txt"
+        android:layout_alignParentStart="true"
+
+        >
+
+    </android.support.design.widget.TextInputLayout>
+
+    <EditText
+        android:id="@+id/room_password_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TextView
+        android:id="@+id/room_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:text="PASSWORD"
+        android:layout_alignBottom="@+id/room_password_input"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <Button
+        android:id="@+id/done_create_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="DONE"
+        android:layout_below="@+id/room_password_input"
+        android:layout_centerHorizontal="true"
+        android:onClick="doneCreateRoom"
+
+        />
+
+    <EditText
+        android:id="@+id/input_room_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input room name"
+        android:layout_above="@+id/room_password"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="45dp"
+
+        />
+
+</RelativeLayout>
