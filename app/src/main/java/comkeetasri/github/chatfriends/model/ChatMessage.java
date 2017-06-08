@@ -1,4 +1,4 @@
-package comkeetasri.github.chatfriends;
+package comkeetasri.github.chatfriends.model;
 
 /**
  * Created by 8.1 on 4/6/2560.
@@ -11,10 +11,6 @@ public class ChatMessage {
         public ChatMessage (String msgText, String msgUser){
                 this.msgText = msgText;
                 this.msgUser = msgUser;
-
-        }
-
-        public ChatMessage () {
 
         }
 
